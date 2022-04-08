@@ -1,0 +1,20 @@
+/* Start Slider */
+/* .content-slider {
+    width: 100%;
+    height: 380px;
+    margin-top: 10rem;
+}
+.content-slider__movie {
+    background-color: #1B1B1B;
+    width: 1000px;
+    height: 330px;
+    margin: auto;
+} */
+.content-slider__img {
+    object-fit: cover;
+    height: 61rem;
+    object-fit: cover;
+    object-position: top;
+    margin: auto;
+}
+/* End Slider */

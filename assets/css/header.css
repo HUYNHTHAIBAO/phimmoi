@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #424041 !important;
+  
+}
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #fafafa;
+    
+}
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(-45deg, #6a5af9, #d66efd);
+  border-radius: 50px;
+}
+*::selection {
+    background-color:rgb(176, 88, 55);
+}
+/* Start Header */
+.header {
+    width: 100%;
+    height: 100px;
+}
+/* Start Header-Top */
+.header-top {
+    width:  100%;
+    height: 55px;
+    background-color: #424041;
+    position: relative;
+    
+}
+.header-top::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #CABF45;
+    box-shadow: 4px 4px 4px 0 #323031;
+}
+.heaedr-top__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
+    margin: auto;
+}
+.header-top__img {
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    animation-name: logo;
+    
+}
+@keyframes logo {
+    from {
+
+    }
+    to {
+
+    }
+}
+.heaedr-top__search {
+  
+}
+.header__top--big {
+    padding-right: 40px;
+    padding-left: 10px;
+    width: 40rem;
+    height: 4rem;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: #323031;
+    color: #cccccc;
+    outline: none;
+}
+.header-top__input {
+    position: relative;
+    
+}
+.header-top__icon {
+    position: absolute;
+    top:0;
+    right: 25%;
+    transform: translate(-50%,-50%);
+}
+.header__icon--big {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #ffffff;
+}
+/* End Header-Top */
+
+/* Start Header-menu */
+.header-nav {
+    width: 100%;
+    height: 45px;
+    background-color: #323031;
+    position: relative;
+    display: flex;
+}
+.header-nav__items {
+    width: 1000px;
+}
+.header-nav::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #cccccc;
+    box-shadow: 2px 2px 2px 0 #000000;
+}
+.header-nav__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+}
+.header-nav__list {
+    padding-left: 2rem;
+}
+.header-nav__items {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.header-nav__items:hover {
+    color: #DACB46;
+}
+ /* End Header-menu  */
+
+/* End Header */

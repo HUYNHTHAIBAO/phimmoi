@@ -1,0 +1,409 @@
+
+.content {
+    width: 1000px;
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+/* left */
+.content-left {
+    width: 70%;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+.content-newmovie {
+    width: 100%;
+    height: 600px;
+    display: flex;
+}
+.content-newmovie__left {
+     width: 40%;
+     height: 620px;
+     background-color: #191919;
+     margin-right: 20px;
+}
+.content-newmovie__right {
+    width: 60%;
+    height: 620px   ;
+    background-color: #1D1D1D;
+}
+.content-newmovie__img {
+    width: 270px;
+    height: 155px;
+    cursor: pointer;
+    object-fit: cover;
+    object-position: center;
+}
+.content-newmovie-tab1 {
+    padding: 1rem;
+}
+.content-newmovie-tab2 {
+    padding: 1rem;
+    display: none;
+}
+.content-newmovie-tab3 {
+    padding: 1rem;
+    display: none;
+}
+.content-newmovie__title {
+    margin-bottom: 2rem;
+    color: #00aefd;
+    text-transform: capitalize;
+}
+.content-newmovie__list {
+    display: flex;
+    border-bottom: 1px dashed #cccccc;
+    cursor: pointer;
+    position: relative;
+}
+.content-newmovie__list:not(:first-child) {
+    margin-top: 1rem;
+}
+.content-newmovie__logo {
+    width: 37px;
+    height: 35px;
+    object-fit: cover;
+    object-position: center;
+}
+.content-newmovie__items {
+    margin-left: 1rem;
+}
+.content-newmovie__name {
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 24rem;
+}
+.content-newmovie__name:hover {
+    color: #ffa400;
+}
+.content-newmovie__sub {
+    color: #cccccc;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 24rem;
+}
+.btn {
+    color: #00aefd !important;
+    font-size: 1.9rem !important;
+}
+.btn:not(:last-child) {
+    border-right: 1px solid #493a3a !important;
+}
+.btn:hover {
+    color: #ffffff !important;
+    background-color: #493a3a;
+}
+.content-newmovie__minutes {
+    font-size: 1.2rem;
+    color: #cccccc;
+    /* margin-left: 12rem; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-transform: capitalize;
+}
+/* Start Phim chiếu rạp */
+.content-theater {
+
+}
+.content-header {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc;
+}
+.content-view {
+    color: #cccccc;
+   font-size: 1.2rem;
+   font-weight: bold;
+   cursor: pointer;
+}
+.content-view__icon {
+    font-size: 1.2rem;
+}
+.content-theater__img {
+    width: 160px;
+    height: 210px;
+    object-fit: cover;
+    object-position: center;
+}
+.content-theater__title {
+    color: #00aefd;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 150px;
+}
+.content-theater__text {
+    color: #cccccc;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 160px;
+}
+.content-theater__arrow{
+    position: absolute;
+    top: -95%;
+    left: 0;
+    height: 2rem;
+    line-height: 2rem;
+    display: inline-block;
+    background-color: #A21D0A;
+    position: relative;
+}
+.content-theater__arrow::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: -12%;
+    content: "";
+    border-top: 1rem solid transparent;
+    border-left: 1.5rem solid #A21D0A;
+    border-bottom: 1rem solid transparent;
+}
+.content-theater__sub {
+    margin-left: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 120.5px;
+}
+.content-theater__movie {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 280px);
+    grid-gap: 20px 10px;
+    grid-template-areas: 
+    "h1 h2 h3 h4"
+    "h5 h6 h7 h8"
+    "h9 h10 h11 h12"
+    ;
+}
+.content-theater__list {
+    background-color: #1D1D1D;
+    grid-area: h1;
+    cursor: pointer;
+}
+.content-theater__list2 {
+    background-color: #1D1D1D;
+    grid-area: h2;
+    cursor: pointer;
+}
+.content-theater__list3 {
+    background-color: #1D1D1D;
+    grid-area: h3;
+    cursor: pointer;
+}
+.content-theater__list4 {
+    background-color: #1D1D1D;
+    grid-area: h4;
+    cursor: pointer;
+}
+.content-theater__list5 {
+    background-color: #1D1D1D;
+    grid-area: h5;
+    cursor: pointer;
+}
+.content-theater__list6 {
+    background-color: #1D1D1D;
+    grid-area: h6;
+    cursor: pointer;
+}
+.content-theater__list7 {
+    background-color: #1D1D1D;
+    grid-area: h7;
+    cursor: pointer;
+}
+.content-theater__list8 {
+    background-color: #1D1D1D;
+    grid-area: h8;
+    cursor: pointer;
+}
+.content-theater__list9 {
+    background-color: #1D1D1D;
+    grid-area: h9;
+    cursor: pointer;
+}
+.content-theater__list10 {
+    background-color: #1D1D1D;
+    grid-area: h10;
+    cursor: pointer;
+}
+.content-theater__list11 {
+    background-color: #1D1D1D;
+    grid-area: h11;
+    cursor: pointer;
+}
+.content-theater__list12 {
+    background-color: #1D1D1D;
+    grid-area: h12;
+    cursor: pointer;
+}
+/* 2 cột */
+.content-theater__movie1 {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 280px);
+    grid-gap: 20px 10px;
+    grid-template-areas: 
+    "h1 h2 h3 h4"
+    "h5 h6 h7 h8"
+    /* "h9 h10 h11 h12" */
+    ;
+}
+.content-theater__list {
+    background-color: #1D1D1D;
+    grid-area: h1;
+    cursor: pointer;
+}
+.content-theater__list2 {
+    background-color: #1D1D1D;
+    grid-area: h2;
+    cursor: pointer;
+}
+.content-theater__list3 {
+    background-color: #1D1D1D;
+    grid-area: h3;
+    cursor: pointer;
+}
+.content-theater__list4 {
+    background-color: #1D1D1D;
+    grid-area: h4;
+    cursor: pointer;
+}
+.content-theater__list5 {
+    background-color: #1D1D1D;
+    grid-area: h5;
+    cursor: pointer;
+}
+.content-theater__list6 {
+    background-color: #1D1D1D;
+    grid-area: h6;
+    cursor: pointer;
+}
+.content-theater__list7 {
+    background-color: #1D1D1D;
+    grid-area: h7;
+    cursor: pointer;
+}
+.content-theater__list8 {
+    background-color: #1D1D1D;
+    grid-area: h8;
+    cursor: pointer;
+}
+/* End Phim chiếu rạp */
+/* right */
+.content-right {
+    width: 30%;
+    margin-top: 2rem;
+}
+.content-text {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: yellow;
+    margin-top: 4rem;
+    display: block;
+}
+.content-text__icon {
+    font-size: 2rem;
+}
+.content-right__movie {
+    background-color: #191919;
+    width: 300px;
+    height: 810px;
+    position: relative;
+}
+.content-movie__desc {
+     position: absolute;
+     top: 5%;
+     left: 10%;
+}
+.content-movie__img {
+    width: 300px;
+    height: 121px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    padding: 0.5rem;
+    opacity: 0.3;
+    cursor: pointer;
+    /* background-image: linear-gradient(to bottom left , #ffa400, #00aefd); */
+}
+.content-movie__name {
+    color: #cccccc;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.content-movie__text {
+    color: #cccccc;
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+.content-movie__rating {
+    width: 8rem;
+    height: 3rem;
+    object-fit: cover;
+    object-position: center;
+}
+.content-movie__wrapper {
+    display: flex;
+    padding: 1rem;
+    cursor: pointer;
+}
+.content-movie__wrapper:nth-child(even) {
+    background-color: #232121;
+}
+.content-movie__image {
+    height: 63px;
+    width: 52px;
+}
+.content-movie__list {
+    margin-left: 2rem;
+}
+.content-movie__title {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.6rem ;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}
+.content-movie__sub {
+    color: #cccccc;
+    font-size: 1.2rem;
+    margin: 0;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 200px;
+}
+.content-movie__view {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin: 0;
+}

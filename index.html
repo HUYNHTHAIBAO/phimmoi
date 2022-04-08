@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phim mới</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font chữ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="warpper">
+         <!-- Start Header -->
+        <div class="header">
+            <!-- Start Header-Top -->
+            <div class="header-top">
+                <div class="heaedr-top__list">
+                    <img src="assets/image/logo.png" alt="" class="header-top__img">
+                    <div class="header-top__search">
+                        <div class="header-top__input">
+                            <input type="text" name="" id="" class="header__top--big" placeholder="Tìm: Tên phim, đạo diễn, diễn viên">
+                        </div>
+                        <div class="header-top__icon">
+                            <i class="fa-solid fa-magnifying-glass header-top header__icon--big"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- End Header-Top  -->
+
+             <!-- Start Header-menu -->
+             <div class="header-nav">
+                <ul class="header-nav__content">
+                    <li class="header-nav__list">
+                        <a href="#" class="header-nav__items" >phim mới</a>
+                    </li>
+                    <li class="header-nav__list">
+                        <a href="#phimdecu" class="header-nav__items">phim đề cử</a>
+                    </li>
+                    <li class="header-nav__list">
+                        <a href="#phimsapchieu" class="header-nav__items" >phim sắp chiếu</a>
+                    </li>
+                    <li class="header-nav__list">
+                        <a href="#phimchieurap" class="header-nav__items">phim chiếu rạp</a>
+                    </li>
+                    <li class="header-nav__list">
+                        <a href="#phimbomoi" class="header-nav__items">phim bộ mới</a>
+                    </li>
+                    <li class="header-nav__list">
+                        <a href="#phimlemoi" class="header-nav__items">phim lẻ mới</a>
+                    </li>
+                    <li class="header-nav__list">
+                        <a href="#phimhoathinh" class="header-nav__items">phim hoại hình</a>
+                    </li>
+                </ul>
+             </div>
+             <!-- End Header-menu -->
+        </div>
+        <!-- End Header -->
+        <!-- Start Slider -->
+        <div class="content-slider">
+            <div class="content-slider__movie">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/image/banner1.jpg" class="d-block w-100 content-slider__img" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/image/banner2.jpg" class="d-block w-100 content-slider__img" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/image/banner3.jpg" class="d-block w-100 content-slider__img" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+        <!-- End Slider -->
+        <!-- Start Content -->
+        <div class="content">
+            <div class="content-left">
+                 <!-- Start Phim đề cử-->
+                    <div class="content-newmovie">
+                        <div class="content-newmovie__left">
+                            <img src="assets/image/tuyentapmarvel.jpg" alt="" class="content-newmovie__img">
+                            <img src="assets/image/tuyentapdc.jpg" alt="" class="content-newmovie__img">
+                            <img src="assets/image/tuyentapcotrang.jpg" alt="" class="content-newmovie__img">
+                            <img src="assets/image/netflix.jpg" alt="" class="content-newmovie__img">
+                        </div>
+                        <div class="content-newmovie__right" id="phimdecu">
+                            <div class="">
+                                <button class="btn" onclick="openCity('b')">Phim lẻ mới</button>
+                                 <button class="btn" onclick="openCity('c')">Phim bộ mới</button>
+                                 <button class=" btn" onclick="openCity('d')">Phim bộ full</button>
+                            </div>
+                            <!-- tab1 -->
+                            <div id="b" class="city content-newmovie-tab1"   >
+                                <!-- <h3 class="content-newmovie__title">phim lẻ mới</h3> -->
+                                <!-- 1 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/cau-truyen-ma-am-2021-63544-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                                câu truyện ma ám 2021 
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                                haunted tales 
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">88 phút</p>
+                                </div>
+                                <!-- 2 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/thanh-pho-mat-tich-63426-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                                thành phố mất tích
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                               the lost city
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">105 phút</p>
+                                </div>
+                                <!-- 3 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/maigret-63428-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                                maigret
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                                maigret
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">89 phút</p>
+                                </div>
+                                <!-- 4 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/dung-tin-ai-san-lung-vua-tien-ma-hoa-63315-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                            ĐỪNG TIN AI: SĂN LÙNG VUA TIỀN MÃ HÓA
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            Trust No One: The Hunt For The Crypto King (2022)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">90 phút</p>
+                                </div>
+                                <!-- 5 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/duoc-vuong-thien-quan-trung-khoi-63365-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                            DƯỢC VƯƠNG THIÊN QUAN: TRÙNG KHỞI
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            Medicine kings coffin (2022)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">82 phút</p>
+                                </div>
+                                <!-- 6 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/khoang-cach-ky-la-63363-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                                khoản cách kỳ lạ
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            After Yang (2021)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">96 phút</p>
+                                </div>
+                                <!-- 7 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/truong-giang-yeu-co-63361-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                                trường giang yêu cơ
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            Yangtze River Siren (2022)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">80 phút</p>
+                                </div>
+                                <!-- 8 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/mua-da-63359-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                                mưa đá
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            All Hail (2022)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">110 phút</p>
+                                </div>
+                                <!-- 9 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/ho-song-trong-mau-xam-63355-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                               họ sống trong màu xám
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            They Live in The Grey (2022)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">123 phút</p>
+                                </div>
+                                <!-- 10 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/tuthan.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                                tử thần vùng texas 2022
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            Texas Chainsaw Massacre (2022)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">83 phút</p>
+                                </div>
+                                <!-- 11 -->
+                            </div>
+                            <!-- tab2 -->
+                            <div id="c" class="city content-newmovie-tab2" >
+                                <!-- <h3 class="content-newmovie__title">phim lẻ mới</h3> -->
+                                 <!-- 1 -->
+                                 <div class="content-newmovie__list">
+                                    <img src="assets/image/ma-ca-rong-hang-xom-2-63420-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                            ma cà rồng hàng xóm 2
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            The House Next Door: Meet the Blacks 2 (2021)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">99 phút</p>
+                                </div>
+                                <!-- 2 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/tieu-nuong-tu-nha-do-te-63383-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                            TIỂU NƯƠNG TỬ NHÀ ĐỒ TỂ
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            Yu Mian Tao Hua Zong Xiang Feng (2022)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">tập 14</p>
+                                </div>
+                                <!-- 2 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/phe-pha-tap-dac-biet-63370-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                                phê pha tập đặc biệt
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            Euphoria Special (2020)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">45 phút / tập</p>
+                                </div>
+                                <!-- 4 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/ngu-giao-ky-khap-tu-co-nhan-quy-63380-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                            ngự giao kí : kháp tự cố nhân quy
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            The Blue Whisper: Part 2 (2022)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">n/a</p>
+                                </div>
+                                <!-- 5 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/linh-kiem-ton-54569-thumbnail.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                           linh kiếm tôn
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            Linh Kiếm Tôn (2019)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">10 phút / tập</p>
+                                </div>
+                                <!-- 6 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/than-y-cuu-tieu-thu-57028-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                            THẦN Y CỬU TIỂU THƯ
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            Than Y Cuu Tieu Thu (2021)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">10 phút</p>
+                                </div>
+                                <!-- 7 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/tu-xuyen-62101-thumbnail.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                                tử xuyên
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            Zi Chuan (2021)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">19 phút</p>
+                                </div>
+                                <!-- 8 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/hen-ho-chon-cong-so-62415-thumbnail.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                               hện hò chốn công sở
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            A Business Proposal (2022)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">60 phút / tập</p>
+                                </div>
+                                <!-- 9 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/tham-tu-sherlock-phan-1-59973-thumbnail.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                            THÁM TỬ SHERLOCK (PHẦN 1)
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            Sherlock (2010)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">90 phút tập </p>
+                                </div>
+                                <!-- 10 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/tham-tu-sherlock-phan-2-63367-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                            THÁM TỬ SHERLOCK (PHẦN 2)
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            Sherlock Holmes: A Game Of Shadows (2012)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">45 phút / tập</p>
+                                </div>
+                                <!-- 11 -->
+                            </div>
+                            <!-- tab3 -->
+                            <div id="d" class=" city content-newmovie-tab3" >
+                                <!-- <h3 class="content-newmovie__title">phim lẻ mới</h3> -->
+                                  <!-- 1 -->
+                                  <div class="content-newmovie__list">
+                                    <img src="assets/image/tham-tu-sherlock-phan-2-63367-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                            THÁM TỬ SHERLOCK (PHẦN 2)
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            Sherlock Holmes: A Game Of Shadows (2012)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">45 phút / tập</p>
+                                </div>
+                                <!-- 2 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/hen-ho-chon-cong-so-62415-thumbnail.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                               hện hò chốn công sở
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            A Business Proposal (2022)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">60 phút / tập</p>
+                                </div>
+                                <!-- 2 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/tu-xuyen-62101-thumbnail.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                                tử xuyên
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            Zi Chuan (2021)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">19 phút</p>
+                                </div>
+                                <!-- 4 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/ma-ca-rong-hang-xom-2-63420-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                            ma cà rồng hàng xóm 2
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            The House Next Door: Meet the Blacks 2 (2021)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">99 phút</p>
+                                </div>
+                                <!-- 5 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/mua-da-63359-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                                mưa đá
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            All Hail (2022)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">110 phút</p>
+                                </div>
+                                <!-- 6 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/duoc-vuong-thien-quan-trung-khoi-63365-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                            DƯỢC VƯƠNG THIÊN QUAN: TRÙNG KHỞI
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            Medicine kings coffin (2022)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">82 phút</p>
+                                </div>
+                                <!-- 7 -->
+                               <div class="content-newmovie__list">
+                                <img src="assets/image/khoang-cach-ky-la-63363-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                <div class="content-newmovie__items">
+                                    <p class="content-newmovie__name">
+                                            khoản cách kỳ lạ
+                                    </p>
+                                    <p class="content-newmovie__sub">
+                                        After Yang (2021)
+                                    </p>
+                                </div>
+                                <p class="content-newmovie__minutes">96 phút</p>
+                            </div>
+                                <!-- 8 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/cau-truyen-ma-am-2021-63544-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                                câu truyện ma ám 2021 
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                                haunted tales 
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">88 phút</p>
+                                </div>
+                                <!-- 9 -->
+                                <div class="content-newmovie__list">
+                                    <img src="assets/image/dung-tin-ai-san-lung-vua-tien-ma-hoa-63315-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                            ĐỪNG TIN AI: SĂN LÙNG VUA TIỀN MÃ HÓA
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                            Trust No One: The Hunt For The Crypto King (2022)
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">90 phút</p>
+                                </div>
+                                <!-- 10 -->
+                                 <div class="content-newmovie__list">
+                                    <img src="assets/image/thanh-pho-mat-tich-63426-thumbnail-250x350.jpg" alt="" class="content-newmovie__logo">
+                                    <div class="content-newmovie__items">
+                                        <p class="content-newmovie__name">
+                                                thành phố mất tích
+                                        </p>
+                                        <p class="content-newmovie__sub">
+                                               the lost city
+                                        </p>
+                                    </div>
+                                    <p class="content-newmovie__minutes">105 phút</p>
+                                </div>
+                                <!-- 11 -->
+                            </div>
+                        </div>
+                    </div>
+                <!-- End Phim đề cử -->
+                               <!-- Start Phim chiếu rạp-->
+                               <div class="content-theater">
+                                <div class="content-header" id="phimchieurap">
+                                    <h2 class="content-text">phim chiếu rạp</h2>
+                                    <p class="content-view">Xem tất cả <i class="fa-solid fa-arrow-right-to-bracket content-view__icon"></i></p>
+                                </div>
+                                <div class="content-theater__movie"  >
+                                    <!-- 1 -->
+                                    <div class="content-theater__list" >
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/nhimsong2.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">nhím sonic 2</h3>
+                                            <p class="content-theater__text">Nhím Sonic 2, Sonic the Hedgehog 2 2022 CAM Thuyết minh</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">cam raw</p>
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="content-theater__list2">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/tuthan.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">tử thần vùng texas 2022</h3>
+                                            <p class="content-theater__text">Texas Chainsaw Massacre (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">thuyết minh</p>
+                                        </div>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="content-theater__list3">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/cong.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">cổng địa ngục 2022</h3>
+                                            <p class="content-theater__text">Texas Chainsaw Massacre (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd trailer</p>
+                                        </div>
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="content-theater__list4">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/duongvejpg.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">đường về 2022</h3>
+                                            <p class="content-theater__text">The Way Back (2020)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 5 -->
+                                    <div class="content-theater__list5">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/mobius.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">mobius</h3>
+                                            <p class="content-theater__text">Morbius (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">cam raw</p>
+                                        </div>
+                                    </div>
+                                    <!-- 6 -->
+                                    <div class="content-theater__list6">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/xe.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">xe cấp cứu</h3>
+                                            <p class="content-theater__text">Ambulance (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">cam vietsub + thuyết minh</p>
+                                        </div>
+                                    </div>
+                                    <!-- 7 -->
+                                    <div class="content-theater__list7">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/thu-tinh-62791-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">thú tính</h3>
+                                            <p class="content-theater__text">Exploited (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 8 -->
+                                    <div class="content-theater__list8">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/ngon-lua-trai-tim-62606-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">ngọn lửa trái tim</h3>
+                                            <p class="content-theater__text">Fireheart (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 9 -->
+                                    <div class="content-theater__list9">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/tuoi-62602-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">tươi</h3>
+                                            <p class="content-theater__text">Fresh (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 10 -->
+                                    <div class="content-theater__list10">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/cau-chuyen-phia-tay-62436-thumbnail.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">câu chuyện phía tây</h3>
+                                            <p class="content-theater__text">West Side Story (2021)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 11-->
+                                    <div class="content-theater__list11">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/rung-the-mang-62399-thumbnail.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">rừng thế mạng</h3>
+                                            <p class="content-theater__text">Survive (2021)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 12-->
+                                    <div class="content-theater__list12">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/khong-loi-thoat-2022-62382-thumbnail.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">không lối thoát 2022</h3>
+                                            <p class="content-theater__text">No Exit (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Phim chiếu rạp-->
+                            <!-- Start Phim bộ mới -->
+                            <div class="content-theater">
+                                <div class="content-header" id="phimbomoi" >
+                                    <h2 class="content-text">phim bộ mới</h2>
+                                    <p class="content-view">Xem tất cả <i class="fa-solid fa-arrow-right-to-bracket content-view__icon"></i></p>
+                                </div>
+                                <div class="content-theater__movie">
+                                    <!-- 1 -->
+                                    <div class="content-theater__list">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/ma-ca-rong-hang-xom-2-63420-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">ma cà rồng 2022</h3>
+                                            <p class="content-theater__text">The House Next Door: Meet the Blacks 2 (2021)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">sắp chiếu hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="content-theater__list2">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/tieu-nuong-tu-nha-do-te-63383-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">tiểu nương tử nhà đồ tể</h3>
+                                            <p class="content-theater__text">Yu Mian Tao Hua Zong Xiang Feng (2022))</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">tập 14 hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="content-theater__list3">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/ngu-giao-ky-khap-tu-co-nhan-quy-63380-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">ngự giao ký: kháp tự cố nhân quy</h3>
+                                            <p class="content-theater__text">The Blue Whisper: Part 2 (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">tập 4 hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="content-theater__list4">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/phe-pha-tap-dac-biet-63370-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">phê pha tập đặc biệt</h3>
+                                            <p class="content-theater__text">Sherlock Holmes: A Game Of Shadows (2012)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">full 4/4 hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 5 -->
+                                    <div class="content-theater__list5">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/dung-quen-em-yeu-anh-63311-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">đừng quên em yêu anh</h3>
+                                            <p class="content-theater__text">Don't Forget I Love You (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">tập 1 raw hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 6 -->
+                                    <div class="content-theater__list6">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/tuyet-ung-linh-chu-ban-movie-63307-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">tuyết ưng lĩnh chủ (bản movie)</h3>
+                                            <p class="content-theater__text">Dong Bo Xue Ying Land (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 7 -->
+                                    <div class="content-theater__list7">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/800-met-phan-1-63272-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">800 mét pần 1</h3>
+                                            <p class="content-theater__text">800 Meters (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">htập 8/8 hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 8 -->
+                                    <div class="content-theater__list8">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/dong-toc-bridgerton-phan-2-63270-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">dòng tộc brdgerton (phần 2)</h3>
+                                            <p class="content-theater__text">Bridgerton (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">tập 1 hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 9 -->
+                                    <div class="content-theater__list9">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/pam-va-tommy-63268-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">pam và tommy</h3>
+                                            <p class="content-theater__text">Pam & Tommy (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">anime hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 10 -->
+                                    <div class="content-theater__list10">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/mashin-eiyuuden-wataru-shichikon-no-ryuujinmaru-63081-thumbnail.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">MASHIN EIYUUDEN WATARU: SHICHIKON NO RYUUJINMARU</h3>
+                                            <p class="content-theater__text">Mashin Eiyuuden Wataru: Shichikon No Ryuujinmaru (2020)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 11-->
+                                    <div class="content-theater__list11">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/pocket-monsters-kami-to-yobareshi-arceus-63079-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">POCKET MONSTERS: KAMI TO YOBARESHI ARCEUS</h3>
+                                            <p class="content-theater__text">Pocket Monsters: Kami To Yobareshi Arceus (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 12-->
+                                    <div class="content-theater__list12">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/nhimsong2.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">nhím sonic 2</h3>
+                                            <p class="content-theater__text">Nhím Sonic 2, Sonic the Hedgehog 2 2022 CAM Thuyết minh</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Phim bộ mới -->
+                            <!-- Start Phim lẻ mới -->
+                            <div class="content-theater">
+                                <div class="content-header" id="phimlemoi">
+                                    <h2 class="content-text">phim lẻ mới</h2>
+                                    <p class="content-view">Xem tất cả <i class="fa-solid fa-arrow-right-to-bracket content-view__icon"></i></p>
+                                </div>
+                                <div class="content-theater__movie1">
+                                    <!-- 1 -->
+                                    <div class="content-theater__list">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/gila-gusti-63546-thumbnail.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">GILA GUSTI</h3>
+                                            <p class="content-theater__text">Gila Gusti (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub + tm</p>
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="content-theater__list2">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/cau-truyen-ma-am-2021-63544-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">câu truyện ma ám 2021</h3>
+                                            <p class="content-theater__text">Haunted Tales (2021)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">thuyết minh</p>
+                                        </div>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="content-theater__list3">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/maigret-63428-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">MAIGRET</h3>
+                                            <p class="content-theater__text">Maigret (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="content-theater__list4">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/thanh-pho-mat-tich-63426-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">thành phố mất tích</h3>
+                                            <p class="content-theater__text">The Lost City (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 5 -->
+                                    <div class="content-theater__list5">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/duoc-vuong-thien-quan-trung-khoi-63365-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">DƯỢC VƯƠNG THIÊN QUAN: TRÙNG KHỞI</h3>
+                                            <p class="content-theater__text">Medicine kings coffin (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 6 -->
+                                    <div class="content-theater__list6">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/nhimsong2.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">nhím sonic 2</h3>
+                                            <p class="content-theater__text">Nhím Sonic 2, Sonic the Hedgehog 2 2022 CAM Thuyết minh</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub + thuyết minh</p>
+                                        </div>
+                                    </div>
+                                    <!-- 7 -->
+                                    <div class="content-theater__list7">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/truong-giang-yeu-co-63361-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">trường giang yêu cơ</h3>
+                                            <p class="content-theater__text">Yangtze River Siren (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 8 -->
+                                    <div class="content-theater__list8">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/khoang-cach-ky-la-63363-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">khoảng cách kỳ lạ</h3>
+                                            <p class="content-theater__text">After Yang (2021)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Phim lẻ mới -->
+                            <!-- Start Phim hoạt hình -->
+                            <div class="content-theater">
+                                <div class="content-header" id="phimhoathinh">
+                                    <h2 class="content-text">phim hoạt hình</h2>
+                                    <p class="content-view">Xem tất cả <i class="fa-solid fa-arrow-right-to-bracket content-view__icon"></i></p>
+                                </div>
+                                <div class="content-theater__movie1">
+                                    <!-- 1 -->
+                                    <div class="content-theater__list">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/apollo-10-1-2-thoi-tho-au-o-ky-nguyen-vu-tru-63296-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">APOLLO 10 1/2: THỜI THƠ ẤU Ở KỶ NGUYÊN VŨ TRỤ
+                                            </h3>
+                                            <p class="content-theater__text">Apollo 10 1/2: A Space Age Adventure (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="content-theater__list2">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/hung-su-thieu-nien-63258-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">hùng thiên sư niên</h3>
+                                            <p class="content-theater__text">I Am What I Am (2021)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="content-theater__list3">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/nhung-ke-xau-xa-63250-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">những kẻ xấu xa</h3>
+                                            <p class="content-theater__text">he Bad Guys (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">cam hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="content-theater__list4">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/mashin-eiyuuden-wataru-shichikon-no-ryuujinmaru-63081-thumbnail.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">MASHIN EIYUUDEN WATARU: SHICHIKON NO RYUUJINMARU</h3>
+                                            <p class="content-theater__text">Mashin Eiyuuden Wataru: Shichikon No Ryuujinmaru (2020)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">anime hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 5 -->
+                                    <div class="content-theater__list5">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/pocket-monsters-kami-to-yobareshi-arceus-63079-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">POCKET MONSTERS: KAMI TO YOBARESHI ARCEUS</h3>
+                                            <p class="content-theater__text">Pocket Monsters: Kami To Yobareshi Arceus (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">anime hd vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 6 -->
+                                    <div class="content-theater__list6">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/chip-va-potato-63077-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">CHIP VÀ POTATO</h3>
+                                            <p class="content-theater__text">Chip Va Potato (2019)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">Anime HD Vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 7 -->
+                                    <div class="content-theater__list7">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/delicious-party-e2-99-a1precure-63035-thumbnail.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">DELICIOUS PARTY♡PRECURE</h3>
+                                            <p class="content-theater__text">Delicious Party♡Precure (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub"> Anime HD Vietsub</p>
+                                        </div>
+                                    </div>
+                                    <!-- 8 -->
+                                    <div class="content-theater__list8">
+                                        <div class="content-theater__image">
+                                            <img src="assets/image/tinh-mong-phan-4-63026-thumbnail-250x350.jpg" class="content-theater__img">
+                                        </div>
+                                        <div class="content-theater__desc">
+                                            <h3 class="content-theater__title">TỈNH MỘNG (PHẦN 4)</h3>
+                                            <p class="content-theater__text">Disenchantment (Season 4) (2022)</p>
+                                        </div>
+                                        <div class="content-theater__arrow">
+                                            <p class="content-theater__sub">10/10 hd vietsub</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Phim hoạt hình -->
+            </div>
+            <div class="content-right">
+            <!-- Start Phim sắp chiếu -->
+                <h2 class="content-text" ><i class="fa-solid fa-star content-text__icon"></i> phim sắp chiếu</h2>
+                <div class="content-right__movie" id="phimsapchieu">
+                    <img class="content-movie__img" src="assets/image/cauvang.jpg" alt="">
+                    <div class="content-movie__desc">
+                        <h3 class="content-movie__name">cậu vàng 2022</h3>
+                        <p class="content-movie__text">đạo diễn : Trần Vũ Thủy</p>
+                        <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                    </div>
+                    <!-- 1 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/matbiec.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">mắt biếc</h3>
+                            <p class="content-movie__sub">đạo diễn : Victor Vũ</p>
+                            <p class="content-movie__view">6.9k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/tamcam.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">tấm cám</h3>
+                            <p class="content-movie__sub">đạo diễn : Ngô Thanh Vân</p>
+                            <p class="content-movie__view">3.9k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/nambuocdeyeu.jpeg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">nắm bước để yêu</h3>
+                            <p class="content-movie__sub">đạo diễn : Justin Baldoni </p>
+                            <p class="content-movie__view">6.3k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/bogia.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">bố già</h3>
+                            <p class="content-movie__sub">đạo diễn : trấn thành</p>
+                            <p class="content-movie__view">6.9k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/tranhquynh.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">trạng quỳnh</h3>
+                            <p class="content-movie__sub">đạo diễn : Đức Thịnh </p>
+                            <p class="content-movie__view">2.9k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/matbiec.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">badgirl</h3>
+                            <p class="content-movie__sub">đạo diễn : ninh dương lan ngọc </p>
+                            <p class="content-movie__view">9k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                </div>
+                <!-- End Phim sắp chiếu -->
+            <!-- Start Phim bộ hot trong tuần -->
+                <h2 class="content-text"><i class="fa-solid fa-star content-text__icon"></i> phim bộ hot trong tuần</h2>
+                <div class="content-right__movie">
+                    <img class="content-movie__img" src="assets/image/bannervuahaitac.jpg" alt="">
+                    <div class="content-movie__desc">
+                        <h3 class="content-movie__name">đảo hải tặc</h3>
+                        <p class="content-movie__text">đạo diễn : Konosuke Uda</p>
+                        <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                    </div>
+                    <!-- 1 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/doraemon.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">doraemon</h3>
+                            <p class="content-movie__sub">đạo diễn :Fujiko Fujio </p>
+                            <p class="content-movie__view">81k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/conan.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">conan</h3>
+                            <p class="content-movie__sub">đạo diễn : Meitantei Konan</p>
+                            <p class="content-movie__view">18.9k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/ancomdayeusau.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">ăn cơm đã yêu sau</h3>
+                            <p class="content-movie__sub">đEat Before Loving (2021) </p>
+                            <p class="content-movie__view">6.3k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/haydechungtoivao.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">hãy để chúng tôi vào</h3>
+                            <p class="content-movie__sub">Let Us In (2021)</p>
+                            <p class="content-movie__view">30k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/tranhquynh.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">quyết đinh của chúa</h3>
+                            <p class="content-movie__sub">The God Committee (2021)</p>
+                            <p class="content-movie__view">6.9k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/kynghitrensaohoa.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">kỳ nghĩ trên sao hỏa</h3>
+                            <p class="content-movie__sub">In Vacanza Su Marte (2020) </p>
+                            <p class="content-movie__view">25k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                </div>
+                <!-- End Phim bộ hot trong tuần -->
+            <!-- Start Phim lẻ trong tuần -->
+                <h2 class="content-text"><i class="fa-solid fa-star content-text__icon"></i> phim lẻ hot trong tuần</h2>
+                <div class="content-right__movie">
+                    <img class="content-movie__img" src="assets/image/bannermatbiecc.jpg" alt="">
+                    <div class="content-movie__desc">
+                        <h3 class="content-movie__name">mắt biếc 2022</h3>
+                        <p class="content-movie__text">đạo diễn : Victor Vũ</p>
+                        <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                    </div>
+                    <!-- 1 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/matbiec.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">mắt biếc</h3>
+                            <p class="content-movie__sub">Victor Vũ</p>
+                            <p class="content-movie__view">2k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/nguoinhen.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">người nhện : không ở nhà</h3>
+                            <p class="content-movie__sub">Spider-Man: No Way Home (2021)</p>
+                            <p class="content-movie__view">39k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/venom.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">venom2 : đối mặt tủ thù</h3>
+                            <p class="content-movie__sub">Venom: Let There Be Carnage (2021) </p>
+                            <p class="content-movie__view">62k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/diepvien007.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">điệp viên 007 : không phải lúc chết</h3>
+                            <p class="content-movie__sub">James Bond 25: No Time to Die (2021)</p>
+                            <p class="content-movie__view">6.9k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/goaphuden.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">góa phụ đen</h3>
+                            <p class="content-movie__sub">Black Widow (2021) </p>
+                            <p class="content-movie__view">9k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="content-movie__wrapper">
+                        <img src="assets/image/giaicuu.jpg" alt="" class="content-movie__image">
+                        <div class="content-movie__list">
+                            <h3 class="content-movie__title">giải cứu "guy"</h3>
+                            <p class="content-movie__sub">Free Guy (2021) </p>
+                            <p class="content-movie__view">22k lượt xem</p>
+                            <img src="assets/image/example-stars-removebg-preview.png" alt="" class="content-movie__rating">
+                        </div>
+                    </div>
+                </div>
+                <!-- End Phim lẻ trong tuần -->
+            </div>
+        </div>
+        <!-- Emd Content -->
+       <div class="footer">
+           <div class="footer-list" >
+               <div class="footer-items">
+                   <div class="footer-card">
+                        <img src="assets/image/logo.png" alt="" class="footer-card__img">
+                        <p class="footer-card__text"  >Copyright 2021 © <a href="" class="footer-card__link-sub">BPhimmoi.net</a> </p>
+                        <p class="footer-card__text">Xem phim mới miễn phí nhanh chất lượng cao. Xem Phim online Việt Sub, Thuyết minh, lồng tiếng chất lượng HD. Xem phim nhanh online chất lượng cao</p>
+                   </div>
+                   <div class="footer-card2">
+                       <h3 class="footer-card__title">phim mới</h3>
+                       <p class="footer-card__text">phim lẻ mới</p>
+                       <p class="footer-card__text">phim bộ mới</p>
+                       <p class="footer-card__text">phim chiếu rạp</p>
+                       <p class="footer-card__text">phim sắp chiếu</p>
+                       <p class="footer-card__text">phim thuyết minh</p>
+                   </div>
+                   <div class="footer-card3">
+                    <h3 class="footer-card__title">phim mới</h3>
+                    <p class="footer-card__text">phim hành động</p>
+                    <p class="footer-card__text">phim kiếm hiệp</p>
+                    <p class="footer-card__text">phim kinh dị</p>
+                    <p class="footer-card__text">phim viễn tưởng</p>
+                    <p class="footer-card__text">phim hoạt hình</p>
+                   </div>
+                   <div class="footer-card4">
+                    <h3 class="footer-card__title">phim mới</h3>
+                    <p class="footer-card__text">phim bộ hàn quốc</p>
+                    <p class="footer-card__text">phim bộ trung quốc</p>
+                    <p class="footer-card__text">phim bộ mỹ</p>
+                    <p class="footer-card__text">phim bộ việt nam</p>
+                    <p class="footer-card__text">phim bộ hồng công</p>
+                   </div>
+                   <div class="footer-card5">
+                    <i class="fa-solid fa-phone footer-card__icon"></i>
+                    <div>
+                        <span class="footer-card__contact">Email liên hệ:</span>
+                        <span class="footer-card__email">ezphimmoi.net@gmail.com</span>
+                    </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+    <script>
+        function openCity(cityName) {
+          var i;
+          var x = document.getElementsByClassName("city");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          document.getElementById(cityName).style.display = "block";  
+        }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
