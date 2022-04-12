@@ -112,8 +112,26 @@
     text-transform: capitalize;
 }
 /* Start Phim chiếu rạp */
-.content-theater {
-
+.content-theater__list {
+ position: relative;
+}
+.content-newmovie__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: all 0.25s linear;
+}
+.content-newmovie__icon {
+    font-size: 50px;
+    color: #96b519;
+}
+.content-theater__list:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list:hover .content-newmovie__play {
+    opacity: 1;
 }
 .content-header {
     display: flex;
@@ -135,7 +153,10 @@
     height: 210px;
     object-fit: cover;
     object-position: center;
+    opacity: 1;
+    transition: all 0.25s linear;
 }
+
 .content-theater__title {
     color: #00aefd;
     font-weight: bold;
@@ -146,6 +167,7 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 150px;
+    margin-top: 0.5rem;
 }
 .content-theater__text {
     color: #cccccc;
@@ -206,56 +228,133 @@
     background-color: #1D1D1D;
     grid-area: h2;
     cursor: pointer;
+    position: relative;
+}
+.content-theater__list2:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list2:hover .content-newmovie__play {
+    opacity: 1;
 }
 .content-theater__list3 {
     background-color: #1D1D1D;
     grid-area: h3;
     cursor: pointer;
+    position: relative;
+}
+.content-theater__list3:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list3:hover .content-newmovie__play {
+    opacity: 1;
 }
 .content-theater__list4 {
     background-color: #1D1D1D;
     grid-area: h4;
     cursor: pointer;
+    position: relative;
+}
+.content-theater__list4:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list4:hover .content-newmovie__play {
+    opacity: 1;
 }
 .content-theater__list5 {
     background-color: #1D1D1D;
     grid-area: h5;
     cursor: pointer;
+    position: relative;
+}
+.content-theater__list5:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list5:hover .content-newmovie__play {
+    opacity: 1;
 }
 .content-theater__list6 {
     background-color: #1D1D1D;
     grid-area: h6;
     cursor: pointer;
+    position: relative;
+}
+.content-theater__list6:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list6:hover .content-newmovie__play {
+    opacity: 1;
 }
 .content-theater__list7 {
     background-color: #1D1D1D;
     grid-area: h7;
     cursor: pointer;
+    position: relative;
+}
+.content-theater__list7:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list7:hover .content-newmovie__play {
+    opacity: 1;
 }
 .content-theater__list8 {
     background-color: #1D1D1D;
     grid-area: h8;
     cursor: pointer;
+    position: relative;
+}
+.content-theater__list8:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list8:hover .content-newmovie__play {
+    opacity: 1;
 }
 .content-theater__list9 {
     background-color: #1D1D1D;
     grid-area: h9;
     cursor: pointer;
+    position: relative;
+}
+.content-theater__list9:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list9:hover .content-newmovie__play {
+    opacity: 1;
 }
 .content-theater__list10 {
     background-color: #1D1D1D;
     grid-area: h10;
     cursor: pointer;
+    position: relative;
+}
+.content-theater__list10:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list10:hover .content-newmovie__play {
+    opacity: 1;
 }
 .content-theater__list11 {
     background-color: #1D1D1D;
     grid-area: h11;
     cursor: pointer;
+    position: relative;
+}
+.content-theater__list11:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list11:hover .content-newmovie__play {
+    opacity: 1;
 }
 .content-theater__list12 {
     background-color: #1D1D1D;
     grid-area: h12;
     cursor: pointer;
+    position: relative;
+}
+.content-theater__list12:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list12:hover .content-newmovie__play {
+    opacity: 1;
 }
 /* 2 cột */
 .content-theater__movie1 {
@@ -406,4 +505,52 @@
     font-size: 1.2rem;
     color: #cccccc;
     margin: 0;
+}
+/* Thông báo phim mới */
+.model {
+    z-index: 1000;
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(46, 47, 48);
+    width: 450px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 1rem;
+    transform: translateY(150%);
+    animation: model 4s forwards 1 linear;
+}
+@keyframes model {
+    20%,
+    80% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(150%);
+    }
+}
+
+.model-img {
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+.model-name {
+    font-size: 16px;
+    color: #ffffff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 180px;
+    font-weight: bold;
+}
+.model-text {
+    font-size: 12px;
+    color: #ffffff;
+}
+.model-desc {
+    margin-left: 1rem;
+    padding: 1rem;
 }

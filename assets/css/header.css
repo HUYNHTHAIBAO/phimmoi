@@ -60,14 +60,6 @@ body::-webkit-scrollbar-thumb {
     animation-name: logo;
     
 }
-@keyframes logo {
-    from {
-
-    }
-    to {
-
-    }
-}
 .heaedr-top__search {
   
 }
@@ -84,7 +76,6 @@ body::-webkit-scrollbar-thumb {
 }
 .header-top__input {
     position: relative;
-    
 }
 .header-top__icon {
     position: absolute;
@@ -143,3 +134,184 @@ body::-webkit-scrollbar-thumb {
  /* End Header-menu  */
 
 /* End Header */
+/* responsive */
+@media screen and (max-width:768px) {
+    .header {
+        width: 130%;
+        height: 100px;
+    }
+    .header-top__icon {
+        display: none;
+    }
+    .content-slider__movie {
+        width: 130%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .content-slider {
+        display: none;
+    }
+    .header-nav {
+        display: none;
+    }
+    .content-newmovie__left {
+        display: none;
+    }
+    .content-newmovie__right {
+        width:100%;
+        padding-right: 2.4rem;
+    }
+    .content-theater__movie {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 280px);
+        grid-gap: 20px 10px;
+        grid-template-areas: 
+        "h1 h2 "
+        "h3 h4 "
+        "h5 h6 "
+        "h7 h8 "
+        "h9 h10 "
+        "h11 h12" 
+        ;
+        
+    }
+    .content-theater__list {
+        background-color: #1D1D1D;
+        grid-area: h1;
+        cursor: pointer;
+    }
+    .content-theater__list2 {
+        background-color: #1D1D1D;
+        grid-area: h2;
+        cursor: pointer;
+        position: relative;
+    }
+    .content-theater__list2:hover .content-theater__img {
+        opacity: 0.3;
+    }
+    .content-theater__list2:hover .content-newmovie__play {
+        opacity: 1;
+    }
+    .content-theater__list3 {
+        background-color: #1D1D1D;
+        grid-area: h3;
+        cursor: pointer;
+        position: relative;
+    }
+    .content-theater__list3:hover .content-theater__img {
+        opacity: 0.3;
+    }
+    .content-theater__list3:hover .content-newmovie__play {
+        opacity: 1;
+    }
+    .content-theater__list4 {
+        background-color: #1D1D1D;
+        grid-area: h4;
+        cursor: pointer;
+        position: relative;
+    }
+    .content-theater__list4:hover .content-theater__img {
+        opacity: 0.3;
+    }
+    .content-theater__list4:hover .content-newmovie__play {
+        opacity: 1;
+    }
+    .content-theater__list5 {
+        background-color: #1D1D1D;
+        grid-area: h5;
+        cursor: pointer;
+        position: relative;
+    }
+    .content-theater__list5:hover .content-theater__img {
+        opacity: 0.3;
+    }
+    .content-theater__list5:hover .content-newmovie__play {
+        opacity: 1;
+    }
+    .content-theater__list6 {
+        background-color: #1D1D1D;
+        grid-area: h6;
+        cursor: pointer;
+        position: relative;
+    }
+    .content-theater__list6:hover .content-theater__img {
+        opacity: 0.3;
+    }
+    .content-theater__list6:hover .content-newmovie__play {
+        opacity: 1;
+    }
+    .content-theater__list7 {
+        background-color: #1D1D1D;
+        grid-area: h7;
+        cursor: pointer;
+        position: relative;
+    }
+    .content-theater__list7:hover .content-theater__img {
+        opacity: 0.3;
+    }
+    .content-theater__list7:hover .content-newmovie__play {
+        opacity: 1;
+    }
+    .content-theater__list8 {
+        background-color: #1D1D1D;
+        grid-area: h8;
+        cursor: pointer;
+        position: relative;
+    }
+    .content-theater__list8:hover .content-theater__img {
+        opacity: 0.3;
+    }
+    .content-theater__list8:hover .content-newmovie__play {
+        opacity: 1;
+    }
+    .content-theater__list9 {
+        background-color: #1D1D1D;
+        grid-area: h9;
+        cursor: pointer;
+        position: relative;
+    }
+    .content-theater__list9:hover .content-theater__img {
+        opacity: 0.3;
+    }
+    .content-theater__list9:hover .content-newmovie__play {
+        opacity: 1;
+    }
+    .content-theater__list10 {
+        background-color: #1D1D1D;
+        grid-area: h10;
+        cursor: pointer;
+        position: relative;
+    }
+    .content-theater__list10:hover .content-theater__img {
+        opacity: 0.3;
+    }
+    .content-theater__list10:hover .content-newmovie__play {
+        opacity: 1;
+    }
+    .content-theater__list11 {
+        background-color: #1D1D1D;
+        grid-area: h11;
+        cursor: pointer;
+        position: relative;
+    }
+    .content-theater__list11:hover .content-theater__img {
+        opacity: 0.3;
+    }
+    .content-theater__list11:hover .content-newmovie__play {
+        opacity: 1;
+    }
+    .content-theater__list12 {
+        background-color: #1D1D1D;
+        grid-area: h12;
+        cursor: pointer;
+        position: relative;
+    }
+    .content-theater__list12:hover .content-theater__img {
+        opacity: 0.3;
+    }
+    .content-theater__list12:hover .content-newmovie__play {
+        opacity: 1;
+    }
+}
