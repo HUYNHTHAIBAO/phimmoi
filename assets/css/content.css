@@ -507,7 +507,7 @@
     margin: 0;
 }
 /* Thông báo phim mới */
-.model {
+/* .model {
     z-index: 1000;
     position: fixed;
     left: 15px;
@@ -553,4 +553,700 @@
 .model-desc {
     margin-left: 1rem;
     padding: 1rem;
+} */
+
+/* response */
+@media screen and (max-width : 1024px) {
+    .content {
+        /* width: 0px; */
+    }
+    .content-right {
+        display: none;
+    }
+    .content-left {
+        margin: 20px 100px 20px 50px;
+    }
+}
+@media screen and (max-width : 768px) {
+    .content-left {
+        margin: 20px 100px 20px 50px;
+    }
+    .content-left {
+        width: 80%;
+        margin: 10px 5px;
+    }
+    /*  */
+    .content-newmovie__left {
+        display: none;
+   }
+   .content-newmovie__right {
+       width: 80%;
+       height: 620px   ;
+       background-color: #1D1D1D;
+   }
+   .content-newmovie-tab1 {
+       padding: 0.5rem;
+   }
+   .content-newmovie-tab2 {
+       padding: 0.5rem;
+       display: none;
+   }
+   .content-newmovie-tab3 {
+       padding: 0.5rem;
+       display: none;
+   }
+   .content-newmovie__title {
+       margin-bottom: 1.6rem;
+   }
+   .content-newmovie__list:not(:first-child) {
+       margin-top: 0.8rem;
+   }
+   .content-newmovie__logo {
+       width: 30px;
+       height: 30px;
+       object-fit: cover;
+       object-position: center;
+   }
+   .content-newmovie__items {
+       margin-left: 0.8rem;
+   }
+   .content-newmovie__name {
+       color: #ffffff;
+       font-size: 1.2rem;
+       text-transform: capitalize;
+       font-weight: bold;
+       margin: 0;
+       overflow: hidden;
+       text-overflow: ellipsis;
+       white-space: nowrap;
+       width: 24rem;
+   }
+   .content-newmovie__sub {
+       font-size: 1rem;
+       width: 24rem;
+   }
+   .btn {
+       color: #00aefd !important;
+       font-size: 1.6rem !important;
+   }
+   .btn:not(:last-child) {
+       border-right: 1px solid #493a3a !important;
+   }
+   .btn:hover {
+       color: #ffffff !important;
+       background-color: #493a3a;
+   }
+   .content-newmovie__minutes {
+       font-size: 1.2rem;
+       color: #cccccc;
+       /* margin-left: 12rem; */
+       position: absolute;
+       top: 0;
+       right: 0;
+       text-transform: capitalize;
+   }
+   /* content */
+   .content-newmovie__icon {
+       font-size: 40px;
+   }
+   .content-header {
+    width: 60%;
+       display: flex;
+       align-items: end;
+       justify-content: space-between;
+       border-bottom: 1px solid #cccccc;
+   }
+   .content-view {
+       color: #cccccc;
+      font-size: 1.2rem;
+   }
+   .content-view__icon {
+       font-size: 1.2rem;
+   }
+   .content-theater__img {
+       width: 230px;
+       height: 210px;
+   }
+   
+   .content-theater__title {
+       font-size: 1.2rem;
+       padding: 0.5rem;
+       width: 150px;
+       margin-top: 0.5rem;
+   }
+   .content-theater__text {
+       font-size: 1rem;
+       padding: 0.5rem;
+       width: 160px;
+   }
+   .content-theater__arrow{
+       position: absolute;
+       top: -95%;
+       left: 0;
+       height: 2rem;
+       line-height: 2rem;
+       display: inline-block;
+       background-color: #A21D0A;
+       position: relative;
+   }
+   .content-theater__arrow::before {
+       position: absolute;
+       display: block;
+       top: 0;
+       right: -12%;
+       content: "";
+       border-top: 1rem solid transparent;
+       border-left: 1.5rem solid #A21D0A;
+       border-bottom: 1rem solid transparent;
+   }
+   .content-theater__sub {
+       margin-left: 5px;
+       color: #ffffff;
+       font-size: 1rem;
+       font-weight: bold;
+       text-transform: capitalize;
+       width: 120.5px;
+   }
+   .content-theater__movie {
+       margin-top: 1rem;
+       display: grid;
+       grid-template-columns: repeat(2, 230px);
+       grid-template-rows: repeat(6, 280px);
+       grid-gap: 20px 10px;
+       grid-template-areas: 
+       "h1 h2"
+       "h3 h4"
+       "h5 h6"
+       "h7 h8"
+       "h9 h10"
+       "h11 h12"
+       ;
+   }
+   .content-theater__list {
+       background-color: #1D1D1D;
+       grid-area: h1;
+       cursor: pointer;
+   }
+   .content-theater__list2 {
+       background-color: #1D1D1D;
+       grid-area: h2;
+       cursor: pointer;
+       position: relative;
+   }
+   .content-theater__list2:hover .content-theater__img {
+       opacity: 0.3;
+   }
+   .content-theater__list2:hover .content-newmovie__play {
+       opacity: 1;
+   }
+   .content-theater__list3 {
+       background-color: #1D1D1D;
+       grid-area: h3;
+       cursor: pointer;
+       position: relative;
+   }
+   .content-theater__list3:hover .content-theater__img {
+       opacity: 0.3;
+   }
+   .content-theater__list3:hover .content-newmovie__play {
+       opacity: 1;
+   }
+   .content-theater__list4 {
+       background-color: #1D1D1D;
+       grid-area: h4;
+       cursor: pointer;
+       position: relative;
+   }
+   .content-theater__list4:hover .content-theater__img {
+       opacity: 0.3;
+   }
+   .content-theater__list4:hover .content-newmovie__play {
+       opacity: 1;
+   }
+   .content-theater__list5 {
+       background-color: #1D1D1D;
+       grid-area: h5;
+       cursor: pointer;
+       position: relative;
+   }
+   .content-theater__list5:hover .content-theater__img {
+       opacity: 0.3;
+   }
+   .content-theater__list5:hover .content-newmovie__play {
+       opacity: 1;
+   }
+   .content-theater__list6 {
+       background-color: #1D1D1D;
+       grid-area: h6;
+       cursor: pointer;
+       position: relative;
+   }
+   .content-theater__list6:hover .content-theater__img {
+       opacity: 0.3;
+   }
+   .content-theater__list6:hover .content-newmovie__play {
+       opacity: 1;
+   }
+   .content-theater__list7 {
+       background-color: #1D1D1D;
+       grid-area: h7;
+       cursor: pointer;
+       position: relative;
+   }
+   .content-theater__list7:hover .content-theater__img {
+       opacity: 0.3;
+   }
+   .content-theater__list7:hover .content-newmovie__play {
+       opacity: 1;
+   }
+   .content-theater__list8 {
+       background-color: #1D1D1D;
+       grid-area: h8;
+       cursor: pointer;
+       position: relative;
+   }
+   .content-theater__list8:hover .content-theater__img {
+       opacity: 0.3;
+   }
+   .content-theater__list8:hover .content-newmovie__play {
+       opacity: 1;
+   }
+   .content-theater__list9 {
+       background-color: #1D1D1D;
+       grid-area: h9;
+       cursor: pointer;
+       position: relative;
+   }
+   .content-theater__list9:hover .content-theater__img {
+       opacity: 0.3;
+   }
+   .content-theater__list9:hover .content-newmovie__play {
+       opacity: 1;
+   }
+   .content-theater__list10 {
+       background-color: #1D1D1D;
+       grid-area: h10;
+       cursor: pointer;
+       position: relative;
+   }
+   .content-theater__list10:hover .content-theater__img {
+       opacity: 0.3;
+   }
+   .content-theater__list10:hover .content-newmovie__play {
+       opacity: 1;
+   }
+   .content-theater__list11 {
+       background-color: #1D1D1D;
+       grid-area: h11;
+       cursor: pointer;
+       position: relative;
+   }
+   .content-theater__list11:hover .content-theater__img {
+       opacity: 0.3;
+   }
+   .content-theater__list11:hover .content-newmovie__play {
+       opacity: 1;
+   }
+   .content-theater__list12 {
+       background-color: #1D1D1D;
+       grid-area: h12;
+       cursor: pointer;
+       position: relative;
+   }
+   .content-theater__list12:hover .content-theater__img {
+       opacity: 0.3;
+   }
+   .content-theater__list12:hover .content-newmovie__play {
+       opacity: 1;
+   }
+   /* 2 cột */
+   .content-theater__movie1 {
+       margin-top: 1rem;
+       display: grid;
+       grid-template-columns: repeat(2, 230px);
+       grid-template-rows: repeat(2, 280px);
+       grid-gap: 20px 10px;
+       grid-template-areas: 
+       "h1 h2"
+       "h3 h4"
+       "h5 h6"
+       "h7 h8"
+       ;
+   }
+   .content-theater__list {
+       background-color: #1D1D1D;
+       grid-area: h1;
+       cursor: pointer;
+   }
+   .content-theater__list2 {
+       background-color: #1D1D1D;
+       grid-area: h2;
+       cursor: pointer;
+   }
+   .content-theater__list3 {
+       background-color: #1D1D1D;
+       grid-area: h3;
+       cursor: pointer;
+   }
+   .content-theater__list4 {
+       background-color: #1D1D1D;
+       grid-area: h4;
+       cursor: pointer;
+   }
+   .content-theater__list5 {
+       background-color: #1D1D1D;
+       grid-area: h5;
+       cursor: pointer;
+   }
+   .content-theater__list6 {
+       background-color: #1D1D1D;
+       grid-area: h6;
+       cursor: pointer;
+   }
+   .content-theater__list7 {
+       background-color: #1D1D1D;
+       grid-area: h7;
+       cursor: pointer;
+   }
+   .content-theater__list8 {
+       background-color: #1D1D1D;
+       grid-area: h8;
+       cursor: pointer;
+   }
+   /* End Phim chiếu rạp */
+}
+@media screen and (max-width : 480px) {
+    .content-left {
+        margin: 20px 100px 20px 50px;
+    }
+    .content-left {
+        width: 60%;
+        margin: 10px 5px;
+    }
+    /*  */
+   .content-newmovie__right {
+       width: 50%;
+       height: 550px   ;
+       background-color: #1D1D1D   }
+   .content-newmovie-tab1 {
+       padding: 0.5rem;
+   }
+   .content-newmovie-tab2 {
+       padding: 0.5rem;
+       display: none;
+   }
+   .content-newmovie-tab3 {
+       padding: 0.5rem;
+       display: none;
+   }
+   .content-newmovie__title {
+       margin-bottom: 1.2rem;
+   }
+   .content-newmovie__list:not(:first-child) {
+       margin-top: 0.6rem;
+   }
+   .content-newmovie__logo {
+       width: 20px;
+       height: 20px;
+   }
+   .content-newmovie__items {
+       margin-left: 0.6rem;
+   }
+   .content-newmovie__name {
+       color: #ffffff;
+       font-size: 1rem;
+       width: 20rem;
+   }
+   .content-newmovie__sub {
+       font-size: 0.8rem;
+       width: 24rem;
+   }
+   .btn {
+       font-size: 1.2rem !important;
+   }
+   .btn:hover {
+       background-color: #493a3a;
+   }
+   .content-newmovie__minutes {
+      display: none;
+   }
+   /* content */
+   .content-newmovie__icon {
+    font-size: 40px;
+}
+.content-header {
+ width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    border-bottom: 1px solid #cccccc;
+}
+.content-view {
+    color: #cccccc;
+   font-size: 1.2rem;
+}
+.content-view__icon {
+    font-size: 1.2rem;
+}
+.content-theater__img {
+    width: 300px;
+    height: 210px;
+}
+
+.content-theater__title {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    width: 150px;
+    margin-top: 0.5rem;
+}
+.content-theater__text {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 160px;
+}
+.content-theater__arrow{
+    position: absolute;
+    top: -95%;
+    left: 0;
+    height: 2rem;
+    line-height: 2rem;
+    display: inline-block;
+    background-color: #A21D0A;
+    position: relative;
+}
+.content-theater__arrow::before {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: -12%;
+    content: "";
+    border-top: 1rem solid transparent;
+    border-left: 1.5rem solid #A21D0A;
+    border-bottom: 1rem solid transparent;
+}
+.content-theater__sub {
+    margin-left: 5px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 120.5px;
+}
+.content-theater__movie {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(12, 280px);
+    grid-gap: 20px 10px;
+    grid-template-areas: 
+    "h1"
+    "h2"
+    "h3"
+    "h4"
+    "h5"
+    "h6"
+    "h7"
+    "h8"
+    "h9"
+    "h10"
+    "h11"
+    "h12"
+    ;
+}
+.content-theater__list {
+    background-color: #1D1D1D;
+    grid-area: h1;
+    cursor: pointer;
+}
+.content-theater__list2 {
+    background-color: #1D1D1D;
+    grid-area: h2;
+    cursor: pointer;
+    position: relative;
+}
+.content-theater__list2:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list2:hover .content-newmovie__play {
+    opacity: 1;
+}
+.content-theater__list3 {
+    background-color: #1D1D1D;
+    grid-area: h3;
+    cursor: pointer;
+    position: relative;
+}
+.content-theater__list3:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list3:hover .content-newmovie__play {
+    opacity: 1;
+}
+.content-theater__list4 {
+    background-color: #1D1D1D;
+    grid-area: h4;
+    cursor: pointer;
+    position: relative;
+}
+.content-theater__list4:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list4:hover .content-newmovie__play {
+    opacity: 1;
+}
+.content-theater__list5 {
+    background-color: #1D1D1D;
+    grid-area: h5;
+    cursor: pointer;
+    position: relative;
+}
+.content-theater__list5:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list5:hover .content-newmovie__play {
+    opacity: 1;
+}
+.content-theater__list6 {
+    background-color: #1D1D1D;
+    grid-area: h6;
+    cursor: pointer;
+    position: relative;
+}
+.content-theater__list6:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list6:hover .content-newmovie__play {
+    opacity: 1;
+}
+.content-theater__list7 {
+    background-color: #1D1D1D;
+    grid-area: h7;
+    cursor: pointer;
+    position: relative;
+}
+.content-theater__list7:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list7:hover .content-newmovie__play {
+    opacity: 1;
+}
+.content-theater__list8 {
+    background-color: #1D1D1D;
+    grid-area: h8;
+    cursor: pointer;
+    position: relative;
+}
+.content-theater__list8:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list8:hover .content-newmovie__play {
+    opacity: 1;
+}
+.content-theater__list9 {
+    background-color: #1D1D1D;
+    grid-area: h9;
+    cursor: pointer;
+    position: relative;
+}
+.content-theater__list9:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list9:hover .content-newmovie__play {
+    opacity: 1;
+}
+.content-theater__list10 {
+    background-color: #1D1D1D;
+    grid-area: h10;
+    cursor: pointer;
+    position: relative;
+}
+.content-theater__list10:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list10:hover .content-newmovie__play {
+    opacity: 1;
+}
+.content-theater__list11 {
+    background-color: #1D1D1D;
+    grid-area: h11;
+    cursor: pointer;
+    position: relative;
+}
+.content-theater__list11:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list11:hover .content-newmovie__play {
+    opacity: 1;
+}
+.content-theater__list12 {
+    background-color: #1D1D1D;
+    grid-area: h12;
+    cursor: pointer;
+    position: relative;
+}
+.content-theater__list12:hover .content-theater__img {
+    opacity: 0.3;
+}
+.content-theater__list12:hover .content-newmovie__play {
+    opacity: 1;
+}
+/* 2 cột */
+.content-theater__movie1 {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(8, 280px);
+    grid-gap: 20px 10px;
+    grid-template-areas: 
+    "h1"
+    "h2"
+    "h3"
+    "h4"
+    "h5"
+    "h6"
+    "h7"
+    "h8"
+    ;
+}
+.content-theater__list {
+    background-color: #1D1D1D;
+    grid-area: h1;
+    cursor: pointer;
+}
+.content-theater__list2 {
+    background-color: #1D1D1D;
+    grid-area: h2;
+    cursor: pointer;
+}
+.content-theater__list3 {
+    background-color: #1D1D1D;
+    grid-area: h3;
+    cursor: pointer;
+}
+.content-theater__list4 {
+    background-color: #1D1D1D;
+    grid-area: h4;
+    cursor: pointer;
+}
+.content-theater__list5 {
+    background-color: #1D1D1D;
+    grid-area: h5;
+    cursor: pointer;
+}
+.content-theater__list6 {
+    background-color: #1D1D1D;
+    grid-area: h6;
+    cursor: pointer;
+}
+.content-theater__list7 {
+    background-color: #1D1D1D;
+    grid-area: h7;
+    cursor: pointer;
+}
+.content-theater__list8 {
+    background-color: #1D1D1D;
+    grid-area: h8;
+    cursor: pointer;
+}
+/* End Phim chiếu rạp */
 }
